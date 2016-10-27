@@ -5,7 +5,7 @@ A few toys that may, or may not, be a useful addition for your [irssi irc client
 
 Scripts
 -------
-* historybot.pl - a basic utility bot that saves a rolling history of messages 
+* __historybot.pl__ - a basic utility bot that saves a rolling history of messages 
   based on a retention parameter for all channels listed in the config. 
   A nick may send the message !history to the channel (everyone will see the 
   request for history) and then this script will send the number of retained 
