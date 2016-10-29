@@ -19,3 +19,5 @@ Scripts
   Note: this utility uses [Tokyo Cabinet](http://fallabs.com/tokyocabinet/), via the Perl
   extension, to store the rolling histories.  
    
+* __freenodeCertChain.sh__ - A shell script that will build the certificate chain for 
+ freenode.net so your irssi client can verify the ssl connection. 

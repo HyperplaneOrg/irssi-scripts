@@ -16,11 +16,9 @@
 #    ssl_cafile = "~/.irssi/freenodechain.pem";
 #  }
 #
-# This script will build the freenodechain.pem file for youe. It is 
-# assumed that you have curl and a somewhat modern version of openssl 
-# in your PATH; most MacOS and Linux systems have these as standard 
-# packages. You will also need the standard unix/shell program 
-# basename.
+# This script will build the freenodechain.pem file for you. It is 
+# assumed that you have curl and a somewhat modern version of openssl in 
+# your PATH; most MacOS and Linux systems have these as standard packages. 
 
 GANDICERT=https://www.gandi.net/static/CAs/GandiStandardSSLCA2.pem 
 USRTRUST=http://crt.usertrust.com/USERTrustRSAAddTrustCA.crt 
@@ -36,9 +34,7 @@ function add_cert () {
       curl $C >> $FOUT
    fi
 }
-   
 echo -n "" > $FOUT
 add_cert $GANDICERT
 add_cert $USRTRUST 1
 add_cert $ADDTRUST 
-
