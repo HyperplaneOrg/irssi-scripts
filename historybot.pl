@@ -32,7 +32,7 @@ my $hdb;
 # The tokyo cabinet key value store file path
 my $hfile; 
 # The absolute maximum length of a message that can be saved.
-my $maxmsglen = 384; 
+my $maxmsglen = 510; 
 
 my $debug = 0; 
 
@@ -104,7 +104,7 @@ sub sig_public
    my ($server, $msg, $nick, $address, $target) = @_;
    my ($strm, $msgkey, $ecode, $e, $i);
 
-   # chop string off just in case...
+   # chop string off just in case; this shouldn't be needed...
    $msg = substr($msg, 0, $maxmsglen);
 
    foreach my $channel ( @channels  ) {
