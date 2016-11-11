@@ -20,4 +20,17 @@ Scripts
   extension, to store the rolling histories.  
    
 * __freenodeCertChain.sh__ - A shell script that will build the certificate chain for 
- freenode.net so your irssi client can verify the ssl connection. 
+  freenode.net so your irssi client can verify the ssl connection. 
+
+* __noticebot.pl__ - A script that will post a notice to the MacOS notification center 
+  via an inline apple script command (osascript) based on a user/nick list. Note: requires 
+  a somewhat modern MacOS version; tested on 10.11. An example config
+
+```json
+  { "nicks" : [ 
+     {"name" : "foo", "sound" : "Basso.aiff" }, 
+     {"name" : "bar", "sound" : "Basso.aiff" }
+              ]
+  }
+```
+  This usually placed in ~/.irssi/scripts/ directory
