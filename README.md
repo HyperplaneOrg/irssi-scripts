@@ -33,4 +33,4 @@ Scripts
               ]
   }
 ```
-  This usually placed in ~/.irssi/scripts/ directory
+  This is usually placed in ~/.irssi/scripts/ directory
